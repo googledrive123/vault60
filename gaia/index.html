@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+<script src="/js/mimicry.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Ludum Dare 46</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 540px; background: #231F20"></canvas>
+    <script src="Build/Gaia 1.4.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Gaia 1.4.data",
+        frameworkUrl: "Build/Gaia 1.4.framework.js",
+        codeUrl: "Build/Gaia 1.4.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Or-Bit Studios LLC",
+        productName: "Ludum Dare 46",
+        productVersion: "1.3",
+      });
+    </script>
+  </body>
+</html>
