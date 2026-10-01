@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+<script src="/js/mimicry.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ShakyStructures</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 800px; height: 640px; background: #2C4C6A"></canvas>
+    <script src="Build/Shaky_AG2.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Shaky_AG2.data",
+        frameworkUrl: "Build/Shaky_AG2.framework.js",
+        codeUrl: "Build/Shaky_AG2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "tombuston",
+        productName: "ShakyStructures",
+        productVersion: "2.1",
+      });
+    </script>
+  </body>
+</html>
